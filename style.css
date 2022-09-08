@@ -1,0 +1,130 @@
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+* {
+    /* font-family: 'Work Sans', sans-serif; */
+    /* font-family: 'League Spartan', sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    background-image: url(assets/read_news.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.left-box {
+    width: 50%;
+    background-color: var(--body-bg-color);
+    position: relative;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    width: 389px;
+}
+
+.title {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--title-color);
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.second-title {
+    color: #fff;
+    font-weight: 700;
+    font-family: 'League Spartan', sans-serif;
+    padding: 20px 0;
+}
+
+.paragraph {
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: 'League Spartan', sans-serif;
+    padding: 20px 0;
+}
+
+.label-email-input {
+    color: var(--form-color);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    margin: 20px 0;
+    filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+#email-input {
+    width: 750px;
+    height: 48px;
+    border: none;
+    border-left: solid 5px var(--title-color);
+    outline: none;
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    color: var(--form-color);
+}
+
+.submit-button {
+    width: 48px;
+    height: 48px;
+    background-color: var(--bg-button-color);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #8257e5b9;
+}
+
+.send-icon {
+    color: var(--text-color);
+}
+
+.read {
+    width: 220px;
+    color: var(--bg-button-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.read:hover {
+    font-size: 20px;
+}
